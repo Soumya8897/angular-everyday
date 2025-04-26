@@ -9,10 +9,16 @@ import { GetSetComponent } from './get-set/get-set.component';
 import { StyleRulesComponent } from './style-rules/style-rules.component';
 import { ElseifComponent } from './elseif/elseif.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
+import { SignalComponent } from './signal/signal.component';
+import { EffectComponent } from './effect/effect.component';
+import { TwoWayComponent } from './two-way/two-way.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent,CounterComponent,EventHandlingComponent,GetSetComponent,StyleRulesComponent,ElseifComponent,ForLoopComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent,CounterComponent,DynamicStyleComponent,TwoWayComponent,DirectivesComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })

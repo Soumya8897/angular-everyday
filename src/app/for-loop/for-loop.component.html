@@ -1,12 +1,25 @@
-<h1>For Loop in Angular 19</h1>
+<!-- <h1>For Loop in Angular 19</h1> -->
+ <h1>For Loop Contextual Variables</h1>
 <!-- <h2>{{users[0]}}</h2>
 <h2>{{users[1]}}</h2>
 <h2>{{users[2]}}</h2> -->
 
-@for(user of users;track user){
-  <h2>{{user}}</h2>
-}
 
+@for(user of users;track user){
+  <!-- @if($first || $last){
+  <h3 style="background-color: red;">{{$index+1}} {{user}}</h3>}
+  @else{
+  <h3>{{$index+1}} {{user}}</h3>
+  } -->
+  @if($even){
+    <h3 style="background-color: #aaa;">{{$index+1}} {{user}}</h3>}
+    @else{
+    <h3>{{$index+1}} {{user}}</h3>
+    }
+}
+<!-- 
+index is contextual variable here -->
+<!-- 
 <hr>
 
 @for(student of students;track student.name){
@@ -16,4 +29,7 @@
      <span>{{student.email}}</span>
      <button (click) ="getName(student.name)">Get Name</button>
   </h2>
+}  -->
+@empty(){
+   <h1>No Record Found</h1>
 }
