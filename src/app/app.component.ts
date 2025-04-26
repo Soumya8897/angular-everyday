@@ -15,10 +15,11 @@ import { TwoWayComponent } from './two-way/two-way.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { RoutingComponent } from './routing/routing.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent,CounterComponent,DynamicStyleComponent,TwoWayComponent,DirectivesComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent,DynamicStyleComponent,TwoWayComponent,DirectivesComponent,RoutingComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
