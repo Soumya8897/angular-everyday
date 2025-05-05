@@ -16,10 +16,11 @@ import { ToDoComponent } from './to-do/to-do.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RoutingComponent } from './routing/routing.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent,DynamicStyleComponent,TwoWayComponent,DirectivesComponent,RoutingComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,HeaderComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
