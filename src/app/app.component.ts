@@ -17,10 +17,12 @@ import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { RoutingComponent } from './routing/routing.component';
 import { HeaderComponent } from './header/header.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { FormGroupingComponent } from './form-grouping/form-grouping.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,HeaderComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })

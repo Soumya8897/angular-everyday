@@ -1,0 +1,16 @@
+<h1>form-grouping works!</h1>
+<form action="" [formGroup]="profileForm" method="get" (ngSubmit) ="onSubmit()">
+  <input type="text" placeholder="enter name" formControlName ="name">
+  <span *ngIf="name?.hasError('required')">Name is required</span>
+   <span *ngIf="name?.invalid && (name?.dirty || name?.touched)">Provide user name</span>
+  <br><br>
+  <input type="text" placeholder="enter password" formControlName = "password">
+  <br><br>
+  <input type="text" placeholder="enter email" formControlName="email">
+  <br><br>
+  <button>Submit</button>
+  <!-- <button type="button" (click) = "setValue()">Set Value</button> -->
+</form>
+
+<!-- <h1>{{this.profileForm.value.email}}</h1>
+<h1>{{this.profileForm.value.name}}</h1> -->
