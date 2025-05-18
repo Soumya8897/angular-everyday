@@ -19,10 +19,11 @@ import { RoutingComponent } from './routing/routing.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormGroupingComponent } from './form-grouping/form-grouping.component';
+import { TemplateFormsComponent } from './template-forms/template-forms.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
