@@ -20,31 +20,45 @@ import { HeaderComponent } from './header/header.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { FormGroupingComponent } from './form-grouping/form-grouping.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import { ClientComponent } from './client/client.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angulat-tut';
+
+   userName ="Bruce"
+   
+     onUserChange(user:string){
+      this.userName=user;
+     }
+
+
+
+
+
+
+
+  // title = 'angulat-tut';
   // inside class we cannot make thse variables with let or const because these come under class properties
   // user1='soumya';
   // user2 =' rama';
 
-  name :string | number= "Soumya";
-  other = true
+  // name :string | number= "Soumya";
+  // other = true
 
-  handleClickEvent(){
-    alert("func called");
+  // handleClickEvent(){
+  //   alert("func called");
     // this.otherFunction(); // because the function is contained in this class.
-  }
+  
   // otherFunction(){
   //     this.name=34;
   // }
 
-  sum(a:number,b:number){
-    alert(a+b);
-  }
+  // sum(a:number,b:number){
+  //   alert(a+b);
+  // }
 }
