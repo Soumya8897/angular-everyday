@@ -25,10 +25,11 @@ import { ReuseComponent } from './reuse/reuse.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BusinessComponent } from './business/business.component';
 import { CurrencyConverterPipe } from './currency-converter.pipe';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,BusinessComponent,CurrencyConverterPipe],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,LifecycleComponent,CurrencyConverterPipe],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })

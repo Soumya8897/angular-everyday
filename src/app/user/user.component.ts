@@ -9,15 +9,25 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class UserComponent {
 
-  name:string|null ="";
-  constructor( private route:ActivatedRoute){
+  // name:string|null ="";
+  // constructor( private route:ActivatedRoute){
      
+  // }
+  // ngOnInit(){
+  //   this.route.params.subscribe( (params)=>{
+  //     console.log(params);
+  //     this.name = params['name']
+  //   }    
+  //   )
+  // }
+  name='anil'
+  constructor(){
+    console.log("constructor")
+     this.name='sam'
   }
+
   ngOnInit(){
-    this.route.params.subscribe( (params)=>{
-      console.log(params);
-      this.name = params['name']
-    }    
-    )
+    console.log("ngOnInit")
+     this.name='sid'
   }
 }
