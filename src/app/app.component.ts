@@ -24,23 +24,25 @@ import { ClientComponent } from './client/client.component';
 import { ReuseComponent } from './reuse/reuse.component';
 import { CustomerComponent } from './customer/customer.component';
 import { BusinessComponent } from './business/business.component';
+import { CurrencyConverterPipe } from './currency-converter.pipe';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,BusinessComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,BusinessComponent,CurrencyConverterPipe],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-   userName ="Bruce"
+  //  userName ="Bruce"
    
-     onUserChange(user:string){
-      this.userName=user;
-     }
+  //    onUserChange(user:string){
+  //     this.userName=user;
+  //    }
 
-
-
+   amount=10;
+   
+   
 
 
 
