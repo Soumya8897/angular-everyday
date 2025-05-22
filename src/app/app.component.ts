@@ -22,10 +22,12 @@ import { FormGroupingComponent } from './form-grouping/form-grouping.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
 import { ClientComponent } from './client/client.component';
 import { ReuseComponent } from './reuse/reuse.component';
+import { CustomerComponent } from './customer/customer.component';
+import { BusinessComponent } from './business/business.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,ReuseComponent],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,BusinessComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })

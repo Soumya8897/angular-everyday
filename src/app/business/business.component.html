@@ -1,0 +1,8 @@
+<h1>Pass Data to parent Component</h1>
+<app-customer (getUsers)="handleUsers($event)"></app-customer>
+
+@for(user of users;track user){
+  <h1>
+    {{user}}
+  </h1>
+}
