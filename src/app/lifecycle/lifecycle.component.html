@@ -1,6 +1,14 @@
-<h1>LifeCycle Methods in Angular</h1>
+<!-- <h1>LifeCycle Methods in Angular</h1>
 <button (click)="getProductData()">load Data</button>
 
 @for(item of productData;track item){
   <h1>{{item.name}} - {{item.branch}}</h1>
+} -->
+
+<h1>Api call Service</h1>
+
+@for(post of posts;track post.id){
+  <ul>
+    <li>{{post.title}}</li>
+  </ul>
 }
