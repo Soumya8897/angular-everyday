@@ -26,10 +26,11 @@ import { CustomerComponent } from './customer/customer.component';
 import { BusinessComponent } from './business/business.component';
 import { CurrencyConverterPipe } from './currency-converter.pipe';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+// import { ProductService } from './service/product.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,TemplateFormsComponent,ClientComponent,LifecycleComponent,CurrencyConverterPipe],
+  imports: [RouterOutlet,LoginComponent,SignupComponent,TwoWayComponent,DirectivesComponent,RoutingComponent,FormGroupingComponent,ClientComponent,LifecycleComponent],
   templateUrl: './app.component.html', //interpolation is done only in the file given in this url
   styleUrl: './app.component.css'
 })
@@ -41,7 +42,11 @@ export class AppComponent {
   //     this.userName=user;
   //    }
 
-   amount=10;
+  //  amount=10;
+
+  // constructor(private productService:ProductService){
+
+  // }
    
    
 
